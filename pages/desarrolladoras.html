@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrolladoras - Tortas con Amor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pastel-blue': '#F0F8FF', 'pastel-pink': '#FFC0CB',
+                        'brand-text': '#5D4037', 'brand-title': '#3E2723',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body class="bg-pastel-blue font-sans text-brand-text">
+    <header class="shadow-md">
+        <div class="h-48 bg-cover bg-center" style="background-image: url('../assets/Banner.jpg');">
+            <div class="w-full h-full flex flex-col justify-center items-center bg-black bg-opacity-30"></div>
+        </div>
+        <nav class="bg-pastel-pink">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex justify-center">
+                    <ul class="flex space-x-6 py-4">
+                        <li><a href="../index.html" class="nav-link font-bold text-brand-title hover:text-opacity-70">Inicio</a></li>
+                        <li class="dropdown">
+                            <a href="acerca.html" class="nav-link font-bold text-brand-title hover:text-opacity-70">Acerca de <i class="fas fa-chevron-down text-xs"></i></a>
+                            <div class="dropdown-content">
+                                <a href="historia.html">Nuestra Historia</a>
+                                <a href="mision.html">Misión</a>
+                                <a href="vision.html">Visión</a>
+                                <a href="duenas.html">Dueñas</a>
+                            </div>
+                        </li>
+                        <li><a href="tienda.html" class="nav-link font-bold text-brand-title hover:text-opacity-70">Tienda</a></li>
+                        <li><a href="catalogo.html" class="nav-link font-bold text-brand-title hover:text-opacity-70">Catalogo</a></li>                       
+
+                        <li><a href="contacto.html" class="nav-link font-bold text-brand-title hover:text-opacity-70">Contacto</a></li>
+                        <li><a href="desarrolladoras.html" class="nav-link font-bold text-brand-title hover:text-opacity-70">Desarrolladoras</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="page-content" class="max-w-5xl mx-auto p-6 md:p-12">
+        <section class="bg-white p-8 rounded-lg shadow-lg">
+            <h1 class="text-4xl font-serif text-brand-title text-center mb-8">Desarrolladoras del Sitio</h1>
+            <p class="text-lg text-brand-text text-center mb-10 max-w-2xl mx-auto">
+             Este proyecto académico fue desarrollado como requisito para optar al título de Bachiller Técnico en Informática del Colegio Integrado Camilo Torres.
+
+            Su elaboración forma parte del proceso de formación integral que promueve la institución, orientado al desarrollo de competencias técnicas, investigativas y éticas en el campo de la informática.
+            <br><b>© Colegio Integrado Camilo Torres. Todos los derechos reservados. – 2025</b>
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-10">
+                <!-- Desarrolladora 1 -->
+                <div class="text-center max-w-xs">
+                    <img src="../assets/Nikol.jpg" alt="Nikol Yuliana Heredia Rangel" class="w-40 h-40 rounded-full object-cover mx-auto mb-4 border-4 border-pastel-pink">
+                    <h3 class="font-bold text-xl text-brand-title">Nikol Yuliana Heredia Rangel</h3>
+                    <p class="text-sm text-brand-text mt-2">"Tengo 17 años, estudio en el Colegio Camilo Torres. Me gusta el diseño gráfico y aspiro a estudiar Docente a primera infancia. Mi aporte fue más que todo la creación de la página web."</p>
+                </div>
+                <!-- Desarrolladora 2 -->
+                <div class="text-center max-w-xs">
+                    <img src="../assets/Estefani.jpg" alt="Estefani Barrera Gómez" class="w-40 h-40 rounded-full object-cover mx-auto mb-4 border-4 border-pastel-pink">
+                    <h3 class="font-bold text-xl text-brand-title">Estefani Barrera Gómez</h3>
+                    <p class="text-sm text-brand-text mt-2">"Tengo 16 años, estoy en el Colegio Camilo Torres. Me gusta la gastronomía y el ejercicio. Mi aporte al proyecto, fue el diseño y estética de la página web."</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-pastel-pink text-brand-title text-center py-10 mt-12">
+        <div class="max-w-6xl mx-auto">
+            <img src="../assets/Logo.jpg" alt="Logo Tortas con Amor" class="w-24 h-24 mx-auto rounded-full shadow-lg border-4 border-white mb-4">
+            <h3 class="text-2xl font-serif mb-4">Tortas con Amor</h3>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://www.facebook.com/share/1FcSqEyJXG/" target="_blank" aria-label="Facebook" class="text-3xl hover:text-opacity-70"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/tortasc.amor?igsh=MWNidG10Zm9sa2Q3Nw==" target="_blank" aria-label="Instagram" class="text-3xl hover:text-opacity-70"><i class="fab fa-instagram-square"></i></a>
+                <a href="https://wa.me/+573118533197" target="_blank" aria-label="WhatsApp" class="text-3xl hover:text-opacity-70"><i class="fab fa-whatsapp-square"></i></a>
+            </div>
+            <div class="footer-links text-sm space-x-4 mb-4">
+                <a href="politicas.html" class="hover:underline">Políticas de Privacidad</a>
+                <span>|</span>
+                <a href="accesibilidad.html" class="hover:underline">Declaración de Accesibilidad</a>
+                <span>|</span>
+                <a href="terminos.html" class="hover:underline">Términos y Condiciones</a>
+                <span>|</span>
+                <a href="reembolso.html" class="hover:underline">Política de Reembolso</a>
+            </div>
+            <div class="footer-copyright text-xs text-brand-text opacity-75">
+                © 2025 por Tortas con amor. Creado con amor en San Vicente de Chucurí.
+            </div>
+        </div>
+    </footer>
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
