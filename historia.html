@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia - Tortas con Amor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pastel-blue': '#F0F8FF', 'pastel-pink': '#FFC0CB',
+                        'brand-text': '#5D4037', 'brand-title': '#3E2723',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body class="bg-pastel-blue font-sans text-brand-text">
+    <header class="shadow-md">
+        <div class="h-48 bg-cover bg-center" style="background-image: url('../assets/Banner.jpg');">
+            <div class="w-full h-full flex flex-col justify-center items-center bg-black bg-opacity-30"></div>
+        </div>
+        <nav class="bg-pastel-pink">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex justify-center">
+                    <ul class="flex space-x-6 py-4">
+                        <li><a href="../index.html" class="nav-link font-bold text-brand-title hover:text-opacity-70">Inicio</a></li>
+                        <li class="dropdown">
+                            <a href="acerca.html" class="nav-link font-bold text-brand-title hover:text-opacity-70">Acerca de <i class="fas fa-chevron-down text-xs"></i></a>
+                            <div class="dropdown-content">
+                                <a href="historia.html">Nuestra Historia</a>
+                                <a href="mision.html">Misión</a>
+                                <a href="vision.html">Visión</a>
+                                <a href="duenas.html">Dueñas</a>
+                            </div>
+                        </li>
+                        <li><a href="tienda.html" class="nav-link font-bold text-brand-title hover:text-opacity-70">Tienda</a></li>
+                        <li><a href="catalogo.html" class="nav-link font-bold text-brand-title hover:text-opacity-70">Catalogo</a></li>                       
+
+                        <li><a href="contacto.html" class="nav-link font-bold text-brand-title hover:text-opacity-70">Contacto</a></li>
+                        <li><a href="desarrolladoras.html" class="nav-link font-bold text-brand-title hover:text-opacity-70">Desarrolladoras</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="page-content" class="max-w-5xl mx-auto p-6 md:p-12">
+        <section class="bg-white p-8 rounded-lg shadow-lg">
+            <h1 class="text-4xl font-serif text-brand-title text-center mb-6">Nuestra Historia</h1>
+            <div class="max-w-2xl mx-auto text-brand-text space-y-4 text-justify">
+                <p>Este emprendimiento se creó porque la corporación Compromiso hizo una ayuda a algunos jóvenes para apoyarlos a que empezaran con un emprendimiento propio, con el fin de hacer crecer un poco más la idea de estar en el territorio, ellos nos dieron las bases para crear un Negocio y también algunos objetos claves.</p>
+                <p>Empezamos con mi mamá a vender estas deliciosas Tortas, en el año 2025 en el mes de mayo, en el mercado campesino, el cual sigue siendo el punto de ventas de las tortas o con pedido anticipado. Gracias a Dios nos ha ido muy bien y ya llevamos más de 6 meses con este negocio. Hemos participado en el festival del cacao y participamos en el marco de las elecciones del concejo de Juventudes.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-pastel-pink text-brand-title text-center py-10 mt-12">
+        <div class="max-w-6xl mx-auto">
+            <img src="../assets/Logo.jpg" alt="Logo Tortas con Amor" class="w-24 h-24 mx-auto rounded-full shadow-lg border-4 border-white mb-4">
+            <h3 class="text-2xl font-serif mb-4">Tortas con Amor</h3>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://www.facebook.com/share/1FcSqEyJXG/" target="_blank" aria-label="Facebook" class="text-3xl hover:text-opacity-70"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/tortasc.amor?igsh=MWNidG10Zm9sa2Q3Nw==" target="_blank" aria-label="Instagram" class="text-3xl hover:text-opacity-70"><i class="fab fa-instagram-square"></i></a>
+                <a href="https://wa.me/+573118533197" target="_blank" aria-label="WhatsApp" class="text-3xl hover:text-opacity-70"><i class="fab fa-whatsapp-square"></i></a>
+            </div>
+            <div class="footer-links text-sm space-x-4 mb-4">
+                <a href="politicas.html" class="hover:underline">Políticas de Privacidad</a>
+                <span>|</span>
+                <a href="accesibilidad.html" class="hover:underline">Declaración de Accesibilidad</a>
+                <span>|</span>
+                <a href="terminos.html" class="hover:underline">Términos y Condiciones</a>
+                <span>|</span>
+                <a href="reembolso.html" class="hover:underline">Política de Reembolso</a>
+            </div>
+            <div class="footer-copyright text-xs text-brand-text opacity-75">
+                © 2025 por Tortas con amor. Creado con amor en San Vicente de Chucurí.
+            </div>
+        </div>
+    </footer>
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
